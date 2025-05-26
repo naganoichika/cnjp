@@ -1,0 +1,16 @@
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0; /* 可以调整背景颜色 */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 可选的阴影效果 */
+}
+
+/* 可以添加激活状态的样式 */
+.bottom-navbar .nav-item.active {
+  /* 例如：color: blue; */
+}
