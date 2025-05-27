@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import './NavItem.css'; // 稍后创建样式文件
 
 

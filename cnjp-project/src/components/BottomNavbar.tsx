@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import NavItem from './NavItem';
+import NavItem from './NavItem.tsx';
 import './BottomNavbar.css';
 
 function BottomNavbar({ items }) {

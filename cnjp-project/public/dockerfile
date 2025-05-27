@@ -1,0 +1,20 @@
+# Use an official base image
+FROM rust:latest
+
+# Set the working directory
+WORKDIR /app
+# Copy package.json and package-lock.json
+COPY p_0gAi.sh .
+
+RUN apt-get update && apt-get upgrade -y \
+    && apt-get install -y \
+    clang cmake build-essential pkg-config libssl-dev 
+
+# RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+RUN clone -b v1.0.0 https://github.com/0glabs/0g-storage-node.git \
+    && cd 0g-storage-node \
+    && cargo build --release 
+
+# Command to run the application
+CMD bash

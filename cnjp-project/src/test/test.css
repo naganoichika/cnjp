@@ -1,0 +1,11 @@
+/* .test-component {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid rgb(105, 41, 6);
+    font-family: Arial, sans-serif;
+} */
+ h1{
+    color: blue;
+    text-align: center;
+    /* font-size: 1000px; */
+}
