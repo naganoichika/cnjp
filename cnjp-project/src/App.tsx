@@ -1,12 +1,22 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-import TestComponent from './test/test';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
 
 function App() {
+  // App 全局变量区
+  const [collapsed, setCollapsed] = useState(false);
+  const toggleSidebar = () => {
+    setCollapsed(!collapsed);
+  };
+
 
   return (
     <>
-      <TestComponent />
+      <Navbar toggleSidebar={toggleSidebar}/>
+      <Sidebar collapsed={collapsed}/>
+      <MainContent />
     </>
   )
 }

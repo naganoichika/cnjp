@@ -1,0 +1,55 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    position: fixed;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 8px;
+    height: 6vh;
+    background-color: #ffffff;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-button {
+    display: flex;         /* 让按钮里的图标也居中 */
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 24px;
+    cursor: pointer;       /* 鼠标变小手 */
+    margin-top: 3px;
+
+}
+.navbar-logo {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}

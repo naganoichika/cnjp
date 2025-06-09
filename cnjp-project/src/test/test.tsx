@@ -3,12 +3,19 @@ import './test.css';
 function TestComponent() {
   return (
     <div className="test-component">
-        <h1>欢迎学习CSS!</h1>
-        <p>这是一个段落。</p>
-        <p>另一个段落。</p>
-        <button>点击我</button>
+      {/* <button className="test-button">Click Me</button>
+      <textarea>  
+        This is a test textarea. You can type here.
+      </textarea> */}
+
+      <form className="test-form">
+
+      </form>
+      <input type="text" className="test-input" placeholder="Type here..." />
     </div>
   );
 }
 
 export default TestComponent;
+
+

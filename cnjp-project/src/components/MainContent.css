@@ -1,0 +1,19 @@
+.main-content {
+    position: fixed;
+    top: 6vh; /* 留出 Navbar 高度 */
+    left: 100px;
+    right: 0;
+
+    margin-top: 6vh;         /* 顶部留出 Navbar 高度 */
+    margin-left: 200px;      /* 留出 Sidebar 默认宽度 */
+    transition: margin-left 0.3s ease; /* 平滑过渡 */
+    padding: 20px;
+    min-height: calc(100vh - 6vh); /* 除去 Navbar 的剩余高度 */
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+/* Sidebar 折叠时，MainContent 左边距缩小 */
+.sidebar.collapsed ~ .main-content {
+  margin-left: 80px; /* Sidebar 折叠后的宽度 */
+}
